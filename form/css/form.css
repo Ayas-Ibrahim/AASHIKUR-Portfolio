@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-font-family:"Poppins";
+    --heading-font-family:"PT sans";
+    --White: #FFFFFF;
+    --black:#353535;
+    --Pragrap: #7A7A7A;
+
+}
+h1,h2,h3,h4,h5,h6,p,a{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+
+
+/* NAV BAR */
+
+nav ul li a{
+    display: inline-block;
+    font-family:"Poppins";
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    line-height: 30px;
+    padding: 18px 22px !important;
+    color: #353535!important;
+    position: relative;
+
+}
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #353535!important;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    transition:0.3s;
+    
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.offcanvas-header{
+    box-shadow: 0px 0px 30px #353535 ;
+}
+.offcanvas-body ul li a{
+    display: inline-block;
+    font-family:"Poppins";
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    line-height: 30px;
+    padding: 18px 22px !important;
+    color: #353535!important;
+    position: relative;
+
+
+}
+.offcanvas-body ul li a::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #353535!important;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    transition:0.3s;
+
+}
+.offcanvas-body ul li a:hover::after{
+    width: 100%;
+
+}
+@media (max-width: 768px) { 
+    nav{
+        box-shadow: 0px 0 30px rgb(107, 107, 246);
+    }
+ }
+/* NAV BAR */
+
+/* heading start */
+#about .heading{
+    background-image: url(./5447586\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-top: 60px;
+}
+
+#about h2{
+    font-family:var(--heading-font-family);
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 59.52px;
+    text-align: left;
+    color: var(--White);
+    padding: 29px 0 7px 0;
+   }
+   #about h6{
+    font-family: var(--main-font-family);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 34.2px;
+     text-align: center;
+     color:var(--White);
+     padding-bottom: 39px;
+   }
+/* heading end */
+
+/* form start */
+#form .row{
+    padding-top: 103px;
+}
+
+#form h4{
+    font-family: var(--main-font-family);
+font-size: 24px;
+font-weight: 500;
+line-height: 45.6px;
+text-align: left;
+color: #353535;
+}
+#form span{
+    width: 70px;
+    height: 70px;
+    background-color:#FFEBDC;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+}
+#form .d-flex{
+    padding-bottom: 33px;
+}
+#form p{
+    font-family: var(--main-font-family);
+
+font-size: 17px;
+font-weight: 400;
+line-height: 32.3px;
+color: #7A7A7A;
+}
+/* form end/ */
+/*  footer start*/
+footer{
+    background-color: #575757;
+    margin-top: 152px;
+}
+
+footer img{
+    padding: 70px 61px 182px 0;
+}
+
+footer h2{
+    padding: 70px 0px 0 0;
+    font-family:"Poppins";
+font-size: 36px;
+font-weight: 700;
+line-height: 72px;
+color:#FFFFFF;
+
+
+}
+footer p{
+    font-family: "Poppins";
+font-size: 16px;
+font-weight: 400;
+line-height: 28.8px;
+text-align: justified;
+padding: 1px 0 94px 0;
+
+}
+footer a {
+    margin-top: 114px;
+    display: inline-block;
+    margin-left: 176px;
+    font-family: "Poppins";
+font-size: 18px !important;
+font-weight: 600 !important;
+line-height: 32.4px;
+text-align: left;
+
+}
+footer h6{
+    font-family: "Poppins";
+font-size: 18px;
+font-weight: 400;
+line-height: 32.4px;
+text-align: justified;
+color: #BBB9B9;
+
+}
+footer p{
+    font-family: "Poppins";
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: justified;    
+    color:  #FFFFFF;
+    
+}
+footer span{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: #484848;
+    text-align: center;
+    line-height: 48px;
+    margin-left: 8px;
+    margin-top: -10px;
+    color: #ffffff;
+    
+}
+ 
+@media (max-width: 768px) { 
+   footer a{
+       margin-left: 0 !important;
+       margin-bottom: 25px;
+    }
+ }
